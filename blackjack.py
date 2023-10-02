@@ -1,5 +1,6 @@
 import random
 
+# Player class
 class Player():
   # Creates player
   def __init__(self,num,deck):
