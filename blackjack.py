@@ -53,10 +53,9 @@ class Player():
         total += 10
       else:
         total += int(card[0])
-    if total > 21:
-      for card in self.hand:
-        if card in aces:
-          total -= 10
+    for card in self.hand:
+      if card in aces and total > 21:
+        total -= 10
     return total
 
 class Deck():
